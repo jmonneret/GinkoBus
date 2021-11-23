@@ -29,6 +29,13 @@
     <!-- application scripts -->
     <script src="app.js" defer></script>
 
+    <!-- Ajout du service worker -->
+    <script>
+        if('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js');
+        };
+    </script>
+
 </head>
 
 <body>
