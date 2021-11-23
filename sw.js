@@ -17,11 +17,7 @@ const appShellFiles = [
   'icons/maskable_icon.png'
 ];
 
-const gamesImages = [];
-for (let i = 0; i < games.length; i++) {
-  gamesImages.push(`data/img/${games[i].slug}.jpg`);
-}
-const contentToCache = appShellFiles.concat(gamesImages);
+const contentToCache = appShellFiles;
 
 self.addEventListener('install', (e) => {
     console.log('[Service Worker] Install');
