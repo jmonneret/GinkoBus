@@ -42,8 +42,6 @@ self.addEventListener('fetch', (e) => {
     })());
 });
 
-contentToCache.push('/pwa-examples/js13kpwa/icons/icon-32.png');
-
 self.addEventListener('activate', (e) => {
     e.waitUntil(caches.keys().then((keyList) => {
       return Promise.all(keyList.map((key) => {
